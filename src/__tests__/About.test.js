@@ -1,3 +1,4 @@
+import react from "react";
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import About from "../components/About";
@@ -23,7 +24,8 @@ test("uses a default value for the image if no image is passed as a prop", () =>
 });
 
 test("renders a <p> with the about text", () => {
-  render(<About about="About this blog" />);
+  render(<About about="About this
+    blog" />);
   const p = screen.queryByText("About this blog");
   expect(p).toBeInTheDocument();
   expect(p.tagName).toBe("P");

@@ -1,3 +1,4 @@
+import react from "react";
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import Article from "../components/Article";
